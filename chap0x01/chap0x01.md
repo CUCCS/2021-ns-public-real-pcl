@@ -42,21 +42,21 @@
 
 - ##### kali导入虚拟电脑，配置多重加载
 
-<img src="img\释放.jpg" alt="释放" style="zoom:50%;" />
+  <img src="img\释放.jpg" alt="释放" style="zoom:50%;" />
 
 - ##### 新建虚拟机Attack-Kali、Victim-kali利用多重加载配置
 
-<img src="img\Attack-Kali.jpg" alt="Attack-Kali" style="zoom:50%;" />
+  <img src="img\Attack-Kali.jpg" alt="Attack-Kali" style="zoom:50%;" />
 
-<img src="img\Victim-kali.jpg" alt="Victim-kali" style="zoom:50%;" />
+  <img src="img\Victim-kali.jpg" alt="Victim-kali" style="zoom:50%;" />
 
 - ##### 新建虚拟机Gatew-Debian、Victim-Debian和配置多重加载
 
-<img src="img\Debian.jpg" alt="Debian" style="zoom:50%;" />
+  <img src="img\Debian.jpg" alt="Debian" style="zoom:50%;" />
 
 - ##### 新建虚拟机Victim-Xp-1、Victim-Xp-2和配置多重加载
 
-<img src="img\xp.jpg" alt="xp" style="zoom:50%;" />
+  <img src="img\xp.jpg" alt="xp" style="zoom:50%;" />
 
 #### 2.配置Gateway-Debian网关
 
@@ -72,11 +72,11 @@
 
   <img src="img\网卡2.jpg" alt="网卡2" style="zoom:50%;" />
 
-<img src="img\网卡3.jpg" alt="网卡3" style="zoom:50%;" />
+  <img src="img\网卡3.jpg" alt="网卡3" style="zoom:50%;" />
 
-<img src="img\主机网络管理1.jpg" alt="主机网络管理1" style="zoom:50%;" />
+  <img src="img\主机网络管理1.jpg" alt="主机网络管理1" style="zoom:50%;" />
 
-<img src="img\主机网络管理2.jpg" alt="主机网络管理2" style="zoom:50%;" />
+  <img src="img\主机网络管理2.jpg" alt="主机网络管理2" style="zoom:50%;" />
 
 #### 3.配置Victim-Xp-1，Victim-Xp-2，Victim-kali，Victim-Debian
 
@@ -96,7 +96,7 @@
 
 - **设置Victim-kali的网络配置，内部网络intnet1**
 
-<img src="img\Victim-kali-intnet1.jpg" alt="Victim-kali-intnet1" style="zoom:50%;" />
+  <img src="img\Victim-kali-intnet1.jpg" alt="Victim-kali-intnet1" style="zoom:50%;" />
 
 - **查看Victim-kali的IP地址**
 
@@ -142,11 +142,11 @@
 
 - **证明Gateway-Debian网络方式改变，Victim-Xp-2 ping Attack-kali（可以联通，则一定是NAT网络）**
 
-<img src="img\Victim-Xp-2-ping-Attack-kali.jpg" alt="Victim-Xp-2-ping-Attack-kali" style="zoom:50%;" />
+  <img src="img\Victim-Xp-2-ping-Attack-kali.jpg" alt="Victim-Xp-2-ping-Attack-kali" style="zoom:50%;" />
 
 ### 4.进行任务测试
 
-- [x] ##### 靶机可以直接访问攻击者主机
+- [x] 靶机可以直接访问攻击者主机
 
   **靶机Victim-Xp-1访问Attack-kali---成功**
 
@@ -164,52 +164,51 @@
 
   <img src="img\靶机Victim-Debian  访问Attack-kali.jpg" alt="靶机Victim-Debian  访问Attack-kali" style="zoom:50%;" />
 
-  - [x] ##### 攻击者主机无法直接访问靶机
+- [x] 攻击者主机无法直接访问靶机
 
-    **Attack-kali访问靶机Victim-Xp-1**
+  **Attack-kali访问靶机Victim-Xp-1**
 
-    <img src="img\Attack-kali访问靶机Victim-Xp-1.jpg" alt="Attack-kali访问靶机Victim-Xp-1" style="zoom:50%;" />
+  <img src="img\Attack-kali访问靶机Victim-Xp-1.jpg" alt="Attack-kali访问靶机Victim-Xp-1" style="zoom:50%;" />
 
-    **Attack-kali访问靶机Victim-kali**
+  **Attack-kali访问靶机Victim-kali**
 
-    <img src="img\Attack-kali访问靶机Victim-kali.jpg" alt="Attack-kali访问靶机Victim-kali" style="zoom:50%;" />
+  <img src="img\Attack-kali访问靶机Victim-kali.jpg" alt="Attack-kali访问靶机Victim-kali" style="zoom:50%;" />
 
-    **Attack-kali访问靶机Victim-Xp-2**
+  **Attack-kali访问靶机Victim-Xp-2**
 
-    <img src="img\Attack-kali访问靶机Victim-Xp-2.jpg" alt="Attack-kali访问靶机Victim-Xp-2" style="zoom:50%;" />
+  <img src="img\Attack-kali访问靶机Victim-Xp-2.jpg" alt="Attack-kali访问靶机Victim-Xp-2" style="zoom:50%;" />
 
-    **Attack-kali访问靶机Victim-Debian**
+  **Attack-kali访问靶机Victim-Debian**
 
-    <img src="img\Attack-kali访问靶机Victim-Debian.jpg" alt="Attack-kali访问靶机Victim-Debian" style="zoom:50%;" />
+  <img src="img\Attack-kali访问靶机Victim-Debian.jpg" alt="Attack-kali访问靶机Victim-Debian" style="zoom:50%;" />
 
-    - [x] ##### 网关可以直接访问攻击者主机和靶机
+ - [x] 网关可以直接访问攻击者主机和靶机
 
-      **Gateway-Debian访问Victim-Xp-1（关闭防火墙)**
+  **Gateway-Debian访问Victim-Xp-1（关闭防火墙)**
 
-      <img src="img\Gateway-Debian访问Victim-Xp-1.jpg" alt="Gateway-Debian访问Victim-Xp-1" style="zoom:50%;" />
+  <img src="img\Gateway-Debian访问Victim-Xp-1.jpg" alt="Gateway-Debian访问Victim-Xp-1" style="zoom:50%;" />
 
-      **Gateway-Debian访问Victim-kali**
+  **Gateway-Debian访问Victim-kali**
 
-      <img src="img\Gateway-Debian访问Victim-kali.jpg" alt="Gateway-Debian访问Victim-kali" style="zoom:50%;" />
+  <img src="img\Gateway-Debian访问Victim-kali.jpg" alt="Gateway-Debian访问Victim-kali" style="zoom:50%;" />
 
-      **Gateway-Debian访问Victim-Xp-2（关闭防火墙)**
+  **Gateway-Debian访问Victim-Xp-2（关闭防火墙)**
 
-      <img src="img\Gateway-Debian访问Victim-Xp-2.jpg" alt="Gateway-Debian访问Victim-Xp-2" style="zoom:50%;" />
+  <img src="img\Gateway-Debian访问Victim-Xp-2.jpg" alt="Gateway-Debian访问Victim-Xp-2" style="zoom:50%;" />
 
-      **Gateway-Debian访问Victim-Debian**
+  **Gateway-Debian访问Victim-Debian**
 
-      <img src="img\Gateway-Debian访问Victim-Debian.jpg" alt="Gateway-Debian访问Victim-Debian" style="zoom:50%;" />
+  <img src="img\Gateway-Debian访问Victim-Debian.jpg" alt="Gateway-Debian访问Victim-Debian" style="zoom:50%;" />
 
-      **Gateway-Debian访问Attack-kali**
+  **Gateway-Debian访问Attack-kali**
 
-      <img src="img\Gateway-Debian访问Attack-kali.jpg" alt="Gateway-Debian访问Attack-kali" style="zoom:50%;" />
+  <img src="img\Gateway-Debian访问Attack-kali.jpg" alt="Gateway-Debian访问Attack-kali" style="zoom:50%;" />
 
-      - [x] ##### 靶机的所有对外上下行流量必须经过网关(以Victim-Xp-2浏览器登录校园网(cuc.edu.cn)为例)
+- [x] 靶机的所有对外上下行流量必须经过网关(以Victim-Xp-2浏览器登录校园网(cuc.edu.cn)为例)
 
 - **在Gateway-Debian中安装tmux，方便装包程序放在后台运行**
 
    
-
   ```
   tcpdump -i enp0s10 -n -w 20210909.1.pcap
   ```
@@ -226,23 +225,24 @@
 
 - **Ctrl C结束抓包，查看抓包结果**
 
-  ![Debian抓包结果](img\Debian抓包结果.jpg)
+  <img src="img\Debian抓包结果.jpg" alt="Debian抓包结果" style="zoom:50%;" />
 
 - **将所抓的包拷贝到普通目录中，并下载到桌面上**
 
-  ![拷贝](img\拷贝.jpg)
+  <img src="img\拷贝.jpg" alt="拷贝" style="zoom:50%;" />
 
-  ![桌面](img\桌面.jpg)
+  <img src="img\桌面.jpg" alt="桌面" style="zoom:50%;" />
 
 - **对抓到的包20210908.1.pcap进行分析**
 
   ## <img src="img\抓包分析.jpg" alt="抓包分析" style="zoom:50%;" />
 
-  - [x] ##### 所有节点均可以访问互联网
+- [x] 所有节点均可以访问互联网
 
-    **Gateway-Debian访问www.cuc.edu.cn**
+  **Gateway-Debian访问www.cuc.edu.cn**
 
-    <img src="img\Gateway-Debian访问www.cuc.edu.cn.jpg" alt="Gateway-Debian访问www.cuc.edu.cn" style="zoom:50%;" />
+  <img src="img\Gateway-Debian访问www.cuc.edu.cn.jpg" alt="Gateway-Debian访问www.cuc.edu.cn" style="zoom:50%;" />
+  
   **Victim-Xp-1访问www.cuc.edu.cn**
   
   <img src="img\Victim-Xp-1访问www.cuc.edu.cn.jpg" alt="Victim-Xp-1访问www.cuc.edu.cn" style="zoom:50%;" />
@@ -253,14 +253,14 @@
   
   **Victim-Xp-2访问www.cuc.edu.cn**
   
-    <img src="img\Victim-Xp-2访问www.cuc.edu.cn.jpg" alt="Victim-Xp-2访问www.cuc.edu.cn" style="zoom:50%;" />
+  <img src="img\Victim-Xp-2访问www.cuc.edu.cn.jpg" alt="Victim-Xp-2访问www.cuc.edu.cn" style="zoom:50%;" />
   
-    **Victim-Debian访问www.cuc.edu.cn**
+  **Victim-Debian访问www.cuc.edu.cn**
   
-     <img src="img\Victim-Debian访问www.cuc.edu.cn.jpg" alt="Victim-Debian访问www.cuc.edu.cn" style="zoom:50%;" />
-    **Attack-kali访问www.cuc.edu.cn**
+  <img src="img\Victim-Debian访问www.cuc.edu.cn.jpg" alt="Victim-Debian访问www.cuc.edu.cn" style="zoom:50%;" />
+  **Attack-kali访问www.cuc.edu.cn**
   
-    <img src="img\Attack-kali访问www.cuc.edu.cn.jpg" alt="Attack-kali访问www.cuc.edu.cn" style="zoom:50%;" />
+  <img src="img\Attack-kali访问www.cuc.edu.cn.jpg" alt="Attack-kali访问www.cuc.edu.cn" style="zoom:50%;" />
   
     
   

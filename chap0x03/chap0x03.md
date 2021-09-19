@@ -56,15 +56,15 @@ curl -x http://127.0.0.1:8888 http://127.0.0.1:8080/proxy.php
 sed -i.bak "s/#XTinyproxy Yes/XTinyproxy Yes/" /etc/tinyproxy/tinyproxy.conf
 ```
 
-![修改配置](img\修改配置.jpg)
 
+<img src="img\修改配置.jpg" alt="修改配置.jpg" style="zoom:67%;" />
 5.重启 tinyproxy 服务 
 
 systemctl restart tinyproxy
 
 <img src="img\重启tinyproxy.jpg" alt="重启tinyproxy" style="zoom:67%;" />
 
-1. 在独立 shell 窗口开启 tinyproxy 日志监控小程序
+6.在独立 shell 窗口开启 tinyproxy 日志监控小程序
 
 sudo su- 进入root权限
 
@@ -80,7 +80,7 @@ curl -x http://127.0.0.1:8888 https://auth.alipay.com/login/index.htm
 
 观察日志输出结果
 
-<img src="C:\Users\DELL\Desktop\网络安全作业\chap0x03\img\curl.jpg" alt="curl" style="zoom:50%;" />
+<img src="img\curl.jpg" alt="curl" style="zoom:50%;" />
 
 8.查看响应头
 

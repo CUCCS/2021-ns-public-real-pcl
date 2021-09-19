@@ -69,15 +69,14 @@ pkt = promiscping("172.16.111.121")
 sudo ip link set eth0 promisc on
 ```
 
-![受害者主机上手动开启网卡混杂模式](img\受害者主机上手动开启网卡混杂模式.jpg)
+<img src="img\受害者主机上手动开启网卡混杂模式.jpg" alt="受害者主机上手动开启网卡混杂模式" style="zoom:67%;" />
 
 ```bash
 # 此时会发现输出结果里多出来了 PROMISC 
 ip link show eth0
 ```
 
-![开启混杂模式后结果多出了PROMISC](img\开启混杂模式后结果多出了PROMISC.jpg)
-
+<img src="img\开启混杂模式后结果多出了PROMISC.jpg" alt="开启混杂模式后结果多出了PROMISC" style="zoom:67%;" />
 ```bash
 # 回到攻击者主机上的 scapy 交互式终端继续执行命令
 # 观察两次命令的输出结果差异
@@ -116,7 +115,7 @@ arpbroadcast = Ether(dst="ff:ff:ff:ff:ff:ff")/ARP(op=1, pdst="172.16.111.1 ")
 arpbroadcast.show()
 ```
 
-![构造以及查看ARP请求](img\构造以及查看ARP请求.jpg)
+<img src="img\构造以及查看ARP请求.jpg" alt="构造以及查看ARP请求" style="zoom: 67%;" />
 
 ```
 # 发送这个 ARP 广播请求
@@ -149,7 +148,7 @@ sendp(arpspoofed)
 ip neigh
 ```
 
-![在受害者主机上查看ARP缓存](img\在受害者主机上查看ARP缓存.jpg)
+<img src="img\在受害者主机上查看ARP缓存.jpg" alt="在受害者主机上查看ARP缓存" style="zoom: 67%;" />
 
 ### 恢复受害者主机的 ARP 缓存记录
 

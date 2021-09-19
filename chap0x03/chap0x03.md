@@ -280,7 +280,7 @@ service tinyproxy restart
  service tinyproxy status
 ```
 
-![问题解决2](img\问题解决2.jpg)
+<img src="img\问题解决2.jpg" alt="问题解决2" style="zoom: 50%;" />
 
 
 
